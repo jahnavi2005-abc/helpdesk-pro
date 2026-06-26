@@ -2,18 +2,14 @@
 FROM node:22-alpine AS builder
 WORKDIR /app
 COPY package*.json ./
-RUN npm install --legacy-peer-deps
+RUN npm install --legacy-peer-deps && npm install react-is --legacy-peer-deps
 COPY . .
-
-# Build args for environment variables
 ARG VITE_API_URL
 ARG VITE_SOCKET_URL
 ENV VITE_API_URL=$VITE_API_URL
 ENV VITE_SOCKET_URL=$VITE_SOCKET_URL
-
 RUN npm run build
 
-# Stage 2: Serve with Nginx
 FROM nginx:alpine AS production
 RUN rm /etc/nginx/conf.d/default.conf
 COPY nginx.conf /etc/nginx/conf.d/
