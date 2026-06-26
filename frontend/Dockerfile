@@ -1,8 +1,8 @@
 # Stage 1: Build React app
-FROM node:18-alpine AS builder
+FROM node:20-alpine AS builder
 WORKDIR /app
 COPY package*.json ./
-RUN npm ci
+RUN npm install --legacy-peer-deps
 COPY . .
 
 # Build args for environment variables
