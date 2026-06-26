@@ -127,7 +127,7 @@ npm run dev         # Starts on http://localhost:5173
 
 ### 4. Open in browser
 ```
-http://localhost:5173
+https://helpdesk-pro-omega.vercel.app/login
 ```
 
 ### Demo Credentials
@@ -180,9 +180,8 @@ http://localhost:5173
 ## 👩‍💻 Author
 
 **Dasari Jahnavi**  
-B.Tech Information Technology | SVCE, Chittoor AP  
-[LinkedIn](https://linkedin.com) | [GitHub](https://github.com)
-
+B.Tech Information Technology | SVCET, Chittoor AP  
+[LinkedIn](https://www.linkedin.com/in/jahnavi-dasari-a6b332266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app) | [GitHub](https://github.com/jahnavi2005-abc)
 ---
 
 ## 📄 License
